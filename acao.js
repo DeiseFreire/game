@@ -24,7 +24,7 @@ this.firePlayerOne();
 if (this.velocitybulletPlayerOne < this.velocityMax-49){
 this.velocityBulletPlayerOne += 50;
 } 
-} else if (this.input.keyboard.isDown(Phaser.keyboard.DOWN)){
+} else if (this.input.keyboard.isDown(Phaser.keyboard.DOWN)){ // Se for apertada a tecla para baixo diminui a velocidade do tiro
 if (this.velocityBulletyPlayerOne > this.velocityMin+49){
 this.velocityBulletPlayerOne -= 50;
 }
