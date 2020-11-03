@@ -18,8 +18,8 @@ this.playerOne.body.angularVelocity = -200; // A gente vai fazer o canhão girar
 // velocidade angular é uma velocidade que faz os objetos girarem. A gente está usando isso para não mudar a posição do canhão de uma vez só. A gente dá uma velocidade angular e aí ele vai mudando suavemente
 } else if (this.input.keyboard.isDown(Phaser.keyboard.RIGHT)){
 this.playerOne.body.angularVelocity = 200;
-} else if (this.input.keyboard.isDown(Phaser.keyboard.SPACEBAR)){ 
-this.firePlayerOne();
+} else if (this.input.keyboard.isDown(Phaser.keyboard.SPACEBAR)){ // A gente está chamando a função fire a função atire
+this.firePlayerOne(); // Função fire, função atire
 } else if (this.input.keyboard.isDown(Phaser.keyboard.UP)){ // Olhar se as teclas estão apertadas ou não em cada update que a gente chegar. O loop principal está rodando chegou em uma função update que foi chamada a gente olha se a tecla que interessa para a gente está apertada 
 if (this.velocitybulletPlayerOne < this.velocityMax-49){
 this.velocityBulletPlayerOne += 50;
